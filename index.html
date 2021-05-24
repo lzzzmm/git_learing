@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎回来</title>
+    <link rel="stylesheet" href="../static/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+    <style type="text/css">
+        body{
+            background: url("../static/image/background1.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-left">
+<h3 class="pt-3 pl-2" style="color:white;">{{ msg }}</h3>
+<a href="http://localhost:8000/user/message">
+    <input type="button" value="修改信息" style="color: green;width:10%" class="ml-2 form-control">
+</a>
+
+<a href="http://localhost:8000/user/logout">
+    <input type="button" value="退出登录" style="color: green;width:10%" class="ml-2 form-control">
+</a>
+
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);">
+    <div class="text-center">
+    <h1 style="color:white;font-family: 华文楷体">去留无意，闲看庭前花开花落</h1>
+    <footer class="blockquote-footer" style="color: white;font-family: 华文楷体">《幽窗小记》</footer>
+</div>
+</div>
+
+<script src="{% static 'jquery\jquery.js' %}"></script>
+<script src="{% static 'bootstrap-4.4.1-dist/css/bootstrap.min.css' %}"></script>
+<script src="{% static 'popper/popper.js' %}"></script>
+</body>
+</html>
+
+
+
+
